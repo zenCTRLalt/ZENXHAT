@@ -3,6 +3,8 @@ CLI Main Interface for ZENXHAT
 """
 
 import click
+import os
+from pathlib import Path
 from zenxhat.core.logger import setup_logger
 from zenxhat.core.config import config
 from zenxhat.modules import (
@@ -19,12 +21,28 @@ from zenxhat.core.utils import print_header, print_success, print_error, format_
 
 logger = setup_logger(__name__, config.LOG_LEVEL)
 
+# Display banner on startup
+def display_banner():
+    """Display ZENXHAT banner"""
+    banner_path = Path(__file__).parent.parent.parent / "assets" / "zenx-banner.txt"
+    if banner_path.exists():
+        try:
+            with open(banner_path, 'r') as f:
+                click.echo(f.read())
+        except:
+            pass
 
 @click.group()
-@click.version_option(version="1.0.0")
+@click.version_option(version="1.0.0", prog_name="ZENXHAT")
 def cli():
     """ZENXHAT - OSINT Reconnaissance Toolkit"""
     pass
+
+
+@cli.command()
+def banner():
+    """Display ZENXHAT banner"""
+    display_banner()
 
 
 @cli.command()
@@ -129,7 +147,8 @@ def username(username):
         username_tool = UsernameFinder()
         result = username_tool.search_username(username)
         print(format_json(result))
-        print_success(f"Found on {len(result['found_on'])} platform(s)")
+        found_count = len([x for x in result['found_on'] if x['status'] == 'found'])
+        print_success(f"Found on {found_count} platform(s)")
     except Exception as e:
         print_error(f"Error: {str(e)}")
 

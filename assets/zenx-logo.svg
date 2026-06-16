@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="600" height="400" fill="#0a0e27"/>
+  
+  <!-- Gradient definitions -->
+  <defs>
+    <linearGradient id="cyberGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00ff88;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#00ccff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#8800ff;stop-opacity:1" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Outer circle glow -->
+  <circle cx="300" cy="180" r="140" fill="none" stroke="url(#cyberGradient)" stroke-width="2" opacity="0.3" filter="url(#glow)"/>
+  <circle cx="300" cy="180" r="130" fill="none" stroke="url(#cyberGradient)" stroke-width="1" opacity="0.2"/>
+  
+  <!-- Main Z shape (stylized) -->
+  <g transform="translate(300, 180)">
+    <!-- Z shape with cyber effect -->
+    <path d="M -40 -50 L 40 -50 L -40 50 L 40 50" fill="none" stroke="url(#cyberGradient)" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" filter="url(#glow)"/>
+    
+    <!-- Middle line of Z -->
+    <line x1="-40" y1="0" x2="40" y2="0" stroke="url(#cyberGradient)" stroke-width="6" stroke-linecap="round" filter="url(#glow)"/>
+    
+    <!-- X overlay (intersection) -->
+    <line x1="-30" y1="-40" x2="30" y2="40" stroke="#00ff88" stroke-width="4" stroke-linecap="round" opacity="0.8" filter="url(#glow)"/>
+    <line x1="30" y1="-40" x2="-30" y2="40" stroke="#00ccff" stroke-width="4" stroke-linecap="round" opacity="0.8" filter="url(#glow)"/>
+  </g>
+  
+  <!-- Text: ZENXHAT -->
+  <text x="300" y="320" font-family="Courier New, monospace" font-size="32" font-weight="bold" fill="url(#cyberGradient)" text-anchor="middle" filter="url(#glow)">
+    ZENXHAT
+  </text>
+  
+  <!-- Text: OSINT -->
+  <text x="300" y="360" font-family="Courier New, monospace" font-size="16" fill="#00ccff" text-anchor="middle" opacity="0.9" letter-spacing="4">
+    O S I N T
+  </text>
+  
+  <!-- Decorative elements -->
+  <circle cx="100" cy="50" r="3" fill="#00ff88" opacity="0.6"/>
+  <circle cx="500" cy="50" r="3" fill="#00ccff" opacity="0.6"/>
+  <circle cx="100" cy="350" r="3" fill="#8800ff" opacity="0.6"/>
+  <circle cx="500" cy="350" r="3" fill="#00ff88" opacity="0.6"/>
+  
+  <!-- Border lines -->
+  <line x1="50" y1="20" x2="550" y2="20" stroke="url(#cyberGradient)" stroke-width="1" opacity="0.5"/>
+  <line x1="50" y1="380" x2="550" y2="380" stroke="url(#cyberGradient)" stroke-width="1" opacity="0.5"/>
+  <line x1="20" y1="50" x2="20" y2="350" stroke="url(#cyberGradient)" stroke-width="1" opacity="0.5"/>
+  <line x1="580" y1="50" x2="580" y2="350" stroke="url(#cyberGradient)" stroke-width="1" opacity="0.5"/>
+</svg>

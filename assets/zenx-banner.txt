@@ -1,0 +1,46 @@
+
+╔═══════════════════════════════════════════════════════════════════════════════╗
+║                                                                               ║
+║                         🔍 Z E N X H A T 🔍                                   ║
+║                                                                               ║
+║                    Open Source Intelligence Toolkit v1.0                      ║
+║                                                                               ║
+║                           by zenCTRLalt                                       ║
+║                                                                               ║
+║                    Ethical Hacking & Cybersecurity Research                   ║
+║                                                                               ║
+╠═══════════════════════════════════════════════════════════════════════════════╣
+║                                                                               ║
+║  🎯 RECONNAISSANCE TOOLS                                                      ║
+║                                                                               ║
+║  ✓ WHOIS Lookup               - Domain & Registrant Information               ║
+║  ✓ DNS Resolution             - A, AAAA, MX, NS, TXT Records                 ║
+║  ✓ Subdomain Discovery        - Passive Certificate Transparency             ║
+║  ✓ IP Geolocation             - Location & ASN Information                   ║
+║  ✓ Metadata Extraction        - EXIF, PDF, File Properties                   ║
+║  ✓ Email OSINT                - Breach Checking & Verification                ║
+║  ✓ Username Finder            - Cross-Platform Profile Search                ║
+║  ✓ Search Aggregation         - Multi-Source Intelligence                    ║
+║                                                                               ║
+╠═══════════════════════════════════════════════════════════════════════════════╣
+║                          ⚠️  LEGAL DISCLAIMER ⚠️                             ║
+║                                                                               ║
+║  THIS TOOLKIT IS FOR AUTHORIZED SECURITY TESTING ONLY                        ║
+║                                                                               ║
+║  ✅ ALLOWED:  Authorized penetration testing, security research,             ║
+║               threat intelligence, educational purposes                      ║
+║                                                                               ║
+║  ❌ FORBIDDEN: Unauthorized access, privacy violations, malicious use       ║
+║                                                                               ║
+║  Users are responsible for their actions under applicable laws               ║
+║                                                                               ║
+╠═══════════════���═══════════════════════════════════════════════════════════════╣
+║                                                                               ║
+║  "Information is power. Use it responsibly."                                  ║
+║                                                                               ║
+║  📖 Documentation: https://github.com/zenCTRLalt/ZENXHAT                     ║
+║  🐛 Report Issues: https://github.com/zenCTRLalt/ZENXHAT/issues             ║
+║  📧 Contact: zenCTRLalt@protonmail.com                                       ║
+║                                                                               ║
+╚═══════════════════════════════════════════════════════════════════════════════╝
+
