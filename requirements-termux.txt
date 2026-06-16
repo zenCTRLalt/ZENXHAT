@@ -1,0 +1,14 @@
+# ZENXHAT Requirements untuk Termux
+# Install dengan: pip install -r requirements-termux.txt
+
+# Core dependencies (diperlukan)
+requests>=2.31.0
+beautifulsoup4>=4.12.0
+click>=8.1.0
+colorama>=0.4.6
+python-dotenv>=1.0.0
+tabulate>=0.9.0
+
+# Optional (uncomment jika butuh)
+# dnspython>=2.3.0
+# python-whois>=0.7.3
